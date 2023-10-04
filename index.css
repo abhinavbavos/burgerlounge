@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: orange;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  }
+  
+  nav {
+    margin-right: 20px; /* Adjust the margin to create space between the logo and navigation */
+  }
+  
+  .search-bar {
+    margin-left: 20px; /* Adjust the margin to create space between the navigation and search bar */
+  }
+  nav a {
+    margin-right: 70px;
+  }
+  
+  /* Add space only between the navigation items, not after the last one */
+  nav li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  
+  .logo img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  nav ul {
+    color: black;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li {
+    color: black;
+    margin-right: 20px;
+  }
+  
+  /* Optional: Add some styling to the links */
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .company-info {
+    font-size: xx-large;
+    height: 500px;
+    text-align: left;
+    padding: 50px;
+    background-image: url(./Images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: black; /* Set background color for the menu section */
+  }
+  
+  .dish {
+    width: 20%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    background-color: black; /* Set background color for each dish */
+    color: white; /* Set text color to white */
+    border: 2px solid white; /* Add a white border */
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+  }
+  
+  .dish img {
+    width: 100%; /* Make sure the image takes up the full width of the container */
+  }
+  
+  .dish h2,
+  .dish p {
+    margin: 8px 0; /* Adjust the margin between dish name and price */
+  }
+  
+  .button-container {
+    margin: 10px;
+    margin-top: 30px; /* Add a margin between the button and the border */
+  }
+  
+  .dish button {
+    background-color: orange; /* Set button background color */
+    color: white; /* Set button text color */
+    padding: 5px 20px; /* Adjust button padding for more size */
+    border: none;
+    border-radius: 6px; /* Optional: Add border radius for rounded corners */
+    cursor: pointer;
+  }
+  
+  .dish button:hover {
+    background-color: #ff8c00; /* Change color on hover if desired */
+  }
+  
+  .dish:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    color: black;
+  }
+  @media only screen and (max-width: 600px) {
+    /* Styles for screens up to 600px wide (typical mobile devices) */
+    header {
+      padding: 5px;
+    }
+  
+    .company-info {
+      padding: 30px;
+    }
+  
+    .menu {
+      padding: 10px;
+    }
+  
+    .dish {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    header {
+      padding: 10px;
+    }
+  
+    nav a {
+      display: none; /* Hide the regular navigation */
+    }
+  
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mobile-menu a {
+      margin-bottom: 10px;
+    }
+  }
+  
